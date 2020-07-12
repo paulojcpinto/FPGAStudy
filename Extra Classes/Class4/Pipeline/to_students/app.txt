@@ -1,0 +1,16 @@
+0	input 	R0			(R0 = input = 1)
+1	loadi 	R2, 8			(R2 = 8)
+2	loadi 	R6, 0			(R6 = 0)
+3	loadi 	R7, 50			(R7 = 50)
+4	loadi 	R1, 5			(R1 = 5)
+5	add 	R1, R1, R0		(R1 = 5 + 1 = 6)
+6	store	R1, @R7			(mem[50] = 6)
+7	load 	R5, @R7			(R5 = mem[50] = 6)
+8	sub	R5, R5, R0		(R5 = R5 - 1)
+9	brnz	R5, @R2			(if(R5!=0) PC = 8)
+10	loadi	R3, 255			(R3 = 255)
+11 	output 	R3			(output = 255)
+
+
+
+

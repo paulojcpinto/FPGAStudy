@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../5_Instructions_Micro.srcs/sources_1/ip/Adder_Subtractor/sim/Adder_Subtractor.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+0	input	R0			(R0 = input)
+1	loadi 	R1, 0			(R1 = 0)
+2	loadi 	R2, 5			(R2 = 5)
+3	loadi 	R3, 1			(R3 = 1)
+4	add 	R1, R1, R0		(R1 = R0)
+5	sub 	R1, R1, R3		(R1--)
+6   	add	R0, R0, R1		(R0 = R0 + R1)
+7	brnz	R1, @R2			(if(R1!=0) PC = 5)
+8	output 	R0			(output = R0)
+9 	loadi 	R4, 10 			(R4 = 10)
+10 	jmp 	@R4			(jmp $)
+ 
+

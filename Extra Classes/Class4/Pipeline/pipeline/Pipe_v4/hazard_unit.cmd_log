@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Xilinx/Aulas/Pipe_v2/hazard_unit.xst" -ofn "C:/Xilinx/Aulas/Pipe_v2/hazard_unit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Aulas/Pipe_v2/hazard_unit.xst" -ofn "C:/Xilinx/Aulas/Pipe_v2/hazard_unit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.xst" -ofn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.xst" -ofn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.xst" -ofn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.xst" -ofn "C:/Xilinx/Aulas/Pipe_v3/hazard_unit.syr" 

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="16">
+	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="EDIFSrcs"/>
+		<File Path="$PPRDIR/../micro.ngc">
+		</File>
+		<File Path="$PPRDIR/../hazard_unit.ngc">
+		</File>
+		<File Path="$PPRDIR/../ipcore_dir/Imem.ngc">
+		</File>
+		<File Path="$PPRDIR/../ipcore_dir/Dmem.ngc">
+		</File>
+		<Config>
+			<Option Name="DesignMode" Val="GateLvl"/>
+			<Option Name="GateLvlMode" Val="EDIF"/>
+			<Option Name="TopFile" Val="$PPRDIR/../micro.ngc"/>
+			<Option Name="ConstrsType" Val="UCF"/>
+			<Option Name="SrcSet" Val="sources_1"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

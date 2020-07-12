@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/User/Desktop/Pipe_v3/micro_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="micro_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/micro_tb/Input_pins" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Input_pins[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Input_pins[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/Output_pins" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Output_pins[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Output_pins[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/Clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/Rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Rst</obj_property>
+      <obj_property name="ObjectShortName">Rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[7]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[7,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[7,7:0]</obj_property>
+      <obj_property name="label">R7</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[6]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[6,7:0]</obj_property>
+      <obj_property name="label">R6</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[5]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[5,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[5,7:0]</obj_property>
+      <obj_property name="label">R5</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[4]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[4,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[4,7:0]</obj_property>
+      <obj_property name="label">R4</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[3]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[3,7:0]</obj_property>
+      <obj_property name="label">R3</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[2]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[2,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[2,7:0]</obj_property>
+      <obj_property name="label">R2</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[1]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[1,7:0]</obj_property>
+      <obj_property name="label">R1</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Register_File/registers[0]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0,7:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[0,7:0]</obj_property>
+      <obj_property name="label">R0</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/PC" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">PC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[7:0]</obj_property>
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Op_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Op_a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Op_a[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Op_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Op_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Op_b[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/Instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Instruction[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/stage1/bubble" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bubble</obj_property>
+      <obj_property name="ObjectShortName">bubble</obj_property>
+   </wvobject>
+   <wvobject fp_name="/micro_tb/uut/hazard_unit/Stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Stall</obj_property>
+      <obj_property name="ObjectShortName">Stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus287" type="vbus" db_ref_id="1">
+      <obj_property name="label">mem[50]</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/micro_tb/uut/stage3/data_mem/mem[50]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[50,7:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[50,7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

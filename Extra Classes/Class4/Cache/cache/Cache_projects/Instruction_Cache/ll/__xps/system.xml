@@ -1,0 +1,10 @@
+
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun Mar 09 13:37:43 2014">
+
+  <SYSTEMINFO ARCH="virtex5" DEVICE="xc5vlx20t" PACKAGE="ff323" PART="xc5vlx20tff323-2" SOURCE="C:/Users/jorgepereira/Desktop/Cache_projects/Instruction_Cache/ll/ll.xmp" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

@@ -1,0 +1,4 @@
+verilog work "rom.v"
+verilog work "offchip_memory.v"
+verilog work "Cache_2way_Associative.v"
+verilog work "memory_hierarchy.v"

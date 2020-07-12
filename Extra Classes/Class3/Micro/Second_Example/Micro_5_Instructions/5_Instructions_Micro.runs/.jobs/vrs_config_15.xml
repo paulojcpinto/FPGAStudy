@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Adder_Subtractor_synth_1" LaunchDir="D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.runs/Adder_Subtractor_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RAM_synth_1" LaunchDir="D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.runs/RAM_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

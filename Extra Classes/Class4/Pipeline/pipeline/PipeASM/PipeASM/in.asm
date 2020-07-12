@@ -1,0 +1,12 @@
+LOADI r1,1
+LOADI r2,5
+LOADI r3,4
+LOADI r4,8
+
+
+ADD r2,r3
+SUB r3,r1
+JMP r4
+JMP r0
+ 
+ 

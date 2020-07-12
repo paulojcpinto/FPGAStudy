@@ -1,0 +1,6 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/pedro/Projects/Vivado/5_Instructions_Micro/5_Instructions_Micro.sim/sim_1/synth/func/Microprocessor_tb_func_synth.v,1488323425,verilog,,,,Adder_Subtractor;Adder_Subtractor_c_addsub_v12_0_10;Adder_Subtractor_c_addsub_v12_0_10_fabric_legacy;Adder_Subtractor_c_addsub_v12_0_10_legacy;Adder_Subtractor_c_addsub_v12_0_10_lut6_legacy;Adder_Subtractor_c_addsub_v12_0_10_viv;Datapath;Microprocessor;RAM;RAMblk_mem_gen_generic_cstr;RAMblk_mem_gen_prim_width;RAMblk_mem_gen_prim_wrapper;RAMblk_mem_gen_top;RAMblk_mem_gen_v8_3_5;RAMblk_mem_gen_v8_3_5_synth;glbl,,,,,,,,
+/home/pedro/Projects/Vivado/5_Instructions_Micro/5_Instructions_Micro.srcs/sim_1/new/Microprocessor_tb.v,1488322619,verilog,,,,Microprocessor_tb,,,,,,,,

@@ -1,0 +1,28 @@
+Command line:
+   TB_offchip_memory_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49202
+
+Wed Mar 19 09:58:16 2014
+
+
+ Elaboration Time: 0.202802 sec
+
+ Current Memory Usage: 697.172 Meg
+
+ Total Signals          : 29
+ Total Nets             : 221
+ Total Signal Drivers   : 16
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 763
+
+ Total Simulation Time: 2.18401 sec
+
+ Current Memory Usage: 697.172 Meg
+
+Wed Mar 19 10:01:34 2014
+

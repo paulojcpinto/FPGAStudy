@@ -1,0 +1,17 @@
+# Output products list for <Imem>
+Imem.asy
+Imem.gise
+Imem.mif
+Imem.ngc
+Imem.sym
+Imem.v
+Imem.veo
+Imem.xco
+Imem.xise
+Imem\doc\blk_mem_gen_ds512.pdf
+Imem\doc\blk_mem_gen_v6_1_vinfo.html
+Imem_flist.txt
+Imem_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

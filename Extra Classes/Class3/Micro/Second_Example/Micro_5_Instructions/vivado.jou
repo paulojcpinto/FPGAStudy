@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Feb 26 11:03:25 2018
+# Process ID: 2252
+# Current directory: D:/Ivo/Desktop/Micro_5_Instructions
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5724 D:\Ivo\Desktop\Micro_5_Instructions\5_Instructions_Micro.xpr
+# Log file: D:/Ivo/Desktop/Micro_5_Instructions/vivado.log
+# Journal file: D:/Ivo/Desktop/Micro_5_Instructions\vivado.jou
+#-----------------------------------------------------------
+start_gui

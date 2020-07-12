@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="16">
+	<FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+		<Filter Type="Constrs"/>
+		<File Path="$PPRDIR/../ipcore_dir/Dmem.ncf">
+		</File>
+		<File Path="$PPRDIR/../ipcore_dir/Imem.ncf">
+		</File>
+		<File Path="$PPRDIR/../micro.ucf">
+		</File>
+		<Config>
+			<Option Name="TargetPart" Val="xc3s100ecp132-5"/>
+			<Option Name="ConstrsType" Val="UCF"/>
+			<Option Name="SrcSet" Val="sources_1"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

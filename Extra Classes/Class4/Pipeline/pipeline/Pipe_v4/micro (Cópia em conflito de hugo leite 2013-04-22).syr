@@ -1,0 +1,670 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.84 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.84 secs
+ 
+--> Reading design: micro.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "micro.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "micro"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : micro
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : YES
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "RF.v" in library work
+Compiling verilog file "Inst_mem.v" in library work
+Module <RF> compiled
+Compiling verilog file "data_mem.v" in library work
+Module <ROM> compiled
+Compiling verilog file "ALU.v" in library work
+Compiling verilog include file "defines.v"
+Module <RAM> compiled
+Compiling verilog file "stage3.v" in library work
+Compiling verilog include file "defines.v"
+Module <ALU> compiled
+Compiling verilog file "stage2.v" in library work
+Compiling verilog include file "defines.v"
+Module <stage3> compiled
+Compiling verilog file "stage1.v" in library work
+Compiling verilog include file "defines.v"
+Module <stage2> compiled
+Compiling verilog file "hazard_unit.v" in library work
+Compiling verilog include file "defines.v"
+Module <stage1> compiled
+Compiling verilog file "buffer.v" in library work
+Module <hazard_unit> compiled
+Compiling verilog file "micro.v" in library work
+Compiling verilog include file "defines.v"
+Module <buffer> compiled
+Module <micro> compiled
+No errors in compilation
+Analysis of file <"micro.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <micro> in library <work>.
+
+Analyzing hierarchy for module <stage1> in library <work>.
+
+Analyzing hierarchy for module <buffer> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000011010"
+
+Analyzing hierarchy for module <stage2> in library <work>.
+
+Analyzing hierarchy for module <stage3> in library <work>.
+
+Analyzing hierarchy for module <buffer> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000001100"
+
+Analyzing hierarchy for module <hazard_unit> in library <work>.
+
+Analyzing hierarchy for module <ROM> in library <work>.
+
+Analyzing hierarchy for module <RF> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+Analyzing hierarchy for module <RAM> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <micro>.
+Module <micro> is correct for synthesis.
+ 
+Analyzing module <stage1> in library <work>.
+Module <stage1> is correct for synthesis.
+ 
+Analyzing module <ROM> in library <work>.
+INFO:Xst:2546 - "Inst_mem.v" line 43: reading initialization file "Imem.mif".
+WARNING:Xst:2319 - "Inst_mem.v" line 43: Signal mem in initial block is partially initialized. The initialization will be ignored.
+Module <ROM> is correct for synthesis.
+ 
+Analyzing module <RF> in library <work>.
+Module <RF> is correct for synthesis.
+ 
+Analyzing module <buffer.1> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000011010
+Module <buffer.1> is correct for synthesis.
+ 
+Analyzing module <stage2> in library <work>.
+Module <stage2> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <stage3> in library <work>.
+Module <stage3> is correct for synthesis.
+ 
+Analyzing module <RAM> in library <work>.
+Module <RAM> is correct for synthesis.
+ 
+Analyzing module <buffer.2> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000001100
+Module <buffer.2> is correct for synthesis.
+ 
+Analyzing module <hazard_unit> in library <work>.
+Module <hazard_unit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <buffer_1>.
+    Related source file is "buffer.v".
+    Found 26-bit register for signal <Out>.
+    Summary:
+	inferred  26 D-type flip-flop(s).
+Unit <buffer_1> synthesized.
+
+
+Synthesizing Unit <buffer_2>.
+    Related source file is "buffer.v".
+    Found 12-bit register for signal <Out>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <buffer_2> synthesized.
+
+
+Synthesizing Unit <hazard_unit>.
+    Related source file is "hazard_unit.v".
+WARNING:Xst:647 - Input <Stage1<11:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Stage1<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Stage2<9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Stage2<4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Stage3<9:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Stage4<9:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit comparator equal for signal <Ra_eq_Rd_exec$cmp_eq0000> created at line 53.
+    Found 3-bit comparator equal for signal <Ra_eq_Rd_mem_acc$cmp_eq0000> created at line 56.
+    Found 3-bit comparator equal for signal <Ra_eq_Rd_wb$cmp_eq0000> created at line 59.
+    Found 3-bit comparator equal for signal <Rb_eq_Rd_exec$cmp_eq0000> created at line 54.
+    Found 3-bit comparator equal for signal <Rb_eq_Rd_mem_acc$cmp_eq0000> created at line 57.
+    Found 3-bit comparator equal for signal <Rb_eq_Rd_wb$cmp_eq0000> created at line 60.
+    Summary:
+	inferred   6 Comparator(s).
+Unit <hazard_unit> synthesized.
+
+
+Synthesizing Unit <ROM>.
+    Related source file is "Inst_mem.v".
+WARNING:Xst:653 - Signal <mem> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+    Found 16-bit register for signal <Data>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <ROM> synthesized.
+
+
+Synthesizing Unit <RF>.
+    Related source file is "RF.v".
+    Found 8x8-bit dual-port RAM <Mram_registers> for signal <registers>.
+    Found 8x8-bit dual-port RAM <Mram_registers_ren> for signal <registers>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <RF> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "ALU.v".
+    Found 8-bit addsub for signal <Out$addsub0000>.
+    Found 8-bit xor2 for signal <Out$xor0000> created at line 38.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <RAM>.
+    Related source file is "data_mem.v".
+    Found 256x8-bit single-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <RAM> synthesized.
+
+
+Synthesizing Unit <stage1>.
+    Related source file is "stage1.v".
+    Found 1-bit register for signal <bubble>.
+    Found 8-bit up counter for signal <PC>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <stage1> synthesized.
+
+
+Synthesizing Unit <stage2>.
+    Related source file is "stage2.v".
+Unit <stage2> synthesized.
+
+
+Synthesizing Unit <stage3>.
+    Related source file is "stage3.v".
+    Found 8-bit register for signal <Output_pins>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <stage3> synthesized.
+
+
+Synthesizing Unit <micro>.
+    Related source file is "micro.v".
+Unit <micro> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 256x8-bit single-port RAM                             : 1
+ 8x8-bit dual-port RAM                                 : 2
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 12-bit register                                       : 1
+ 16-bit register                                       : 1
+ 26-bit register                                       : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 6
+ 3-bit comparator equal                                : 6
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <Data_0> in Unit <inst_mem> is equivalent to the following 15 FFs/Latches, which will be removed : <Data_1> <Data_2> <Data_3> <Data_4> <Data_5> <Data_6> <Data_7> <Data_8> <Data_9> <Data_10> <Data_11> <Data_12> <Data_13> <Data_14> <Data_15> 
+WARNING:Xst:1710 - FF/Latch <Out_3> (without init value) has a constant value of 0 in block <buf_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_2> (without init value) has a constant value of 0 in block <buf_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_7> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_6> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_5> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_4> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_3> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_2> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_1> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Output_pins_0> (without init value) has a constant value of 0 in block <stage3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_9> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_8> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_7> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_6> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_5> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_4> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_3> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_2> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_9> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_8> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_7> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_6> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_5> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_4> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_3> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_2> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_1> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <bubble> (without init value) has a constant value of 0 in block <stage1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Data_0> (without init value) has a constant value of 0 in block <inst_mem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_0> (without init value) has a constant value of 0 in block <buf_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_0> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_1> (without init value) has a constant value of 0 in block <buf_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_0> (without init value) has a constant value of 0 in block <buf_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Out_1> (without init value) has a constant value of 0 in block <buf_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <inst_mem> is unconnected in block <stage1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <hazard_unit> is unconnected in block <micro>.
+   It will be removed from the design.
+WARNING:Xst:2404 -  FFs/Latches <Data<15:0>> (without init value) have a constant value of 0 in block <ROM>.
+
+Synthesizing (advanced) Unit <RF>.
+INFO:Xst:3231 - The small RAM <Mram_registers> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <We>            | high     |
+    |     addrA          | connected to signal <Waddr>         |          |
+    |     diA            | connected to signal <In>            |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <Raddr_a>       |          |
+    |     doB            | connected to signal <Out_a>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_registers_ren> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <We>            | high     |
+    |     addrA          | connected to signal <Waddr>         |          |
+    |     diA            | connected to signal <In>            |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <Raddr_b>       |          |
+    |     doB            | connected to signal <Out_b>         |          |
+    -----------------------------------------------------------------------
+Unit <RF> synthesized (advanced).
+
+Synthesizing (advanced) Unit <micro>.
+INFO:Xst:3225 - The RAM <stage3/data_mem/Mram_mem> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <buf2>          |          |
+    |     diA            | connected to signal <stage3/data_mem/tmp> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <out_stage2>    |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <micro> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 256x8-bit dual-port block RAM                         : 1
+ 8x8-bit dual-port distributed RAM                     : 2
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+# Comparators                                          : 6
+ 3-bit comparator equal                                : 6
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <bubble> is unconnected in block <stage1>.
+
+Optimizing unit <micro> ...
+
+Optimizing unit <buffer_2> ...
+
+Optimizing unit <hazard_unit> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <stage1> ...
+WARNING:Xst:1710 - FF/Latch <stage3/Output_pins_0> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_1> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_2> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_3> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_4> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_5> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_6> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage3/Output_pins_7> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_9> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_8> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_7> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_6> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_5> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_4> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_3> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_2> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_1> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_1/Out_0> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_9> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_8> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_7> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_6> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_5> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_4> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_3> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_2> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_1> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_2/Out_0> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_3/Out_3> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_3/Out_2> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_3/Out_1> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <buf_3/Out_0> (without init value) has a constant value of 0 in block <micro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <buf_1/Out_10> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_11> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_12> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_13> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_14> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_15> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_16> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_17> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_18> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_19> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_20> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_21> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_22> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_23> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_24> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_1/Out_25> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_10> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_11> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_12> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_13> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_14> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_15> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_16> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_17> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_18> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_19> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_20> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_21> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_22> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_23> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_24> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_2/Out_25> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage3/data_mem/Mram_mem> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_11> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_10> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_9> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_8> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_7> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_6> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_5> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <buf_3/Out_4> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers8> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers7> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers6> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers5> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers4> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers3> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers2> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers1> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren8> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren7> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren6> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren5> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren4> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren3> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren2> of sequential type is unconnected in block <micro>.
+WARNING:Xst:2677 - Node <stage1/Register_File/Mram_registers_ren1> of sequential type is unconnected in block <micro>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block micro, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : micro.ngr
+Top Level Output File Name         : micro
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                   8  out of     83     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.36 secs
+ 
+--> 
+
+Total memory usage is 200976 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  135 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

@@ -1,0 +1,45 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 17e73b78c50148458fc634587228f97f --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Microprocessor_tb_func_synth xil_defaultlib.Microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.x_lut3_mux4_reduced_0
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.Adder_Subtractor_c_addsub_v12_0_...
+Compiling module xil_defaultlib.Adder_Subtractor_c_addsub_v12_0_...
+Compiling module xil_defaultlib.Adder_Subtractor_c_addsub_v12_0_...
+Compiling module xil_defaultlib.Adder_Subtractor_c_addsub_v12_0_...
+Compiling module xil_defaultlib.Adder_Subtractor_c_addsub_v12_0_...
+Compiling module xil_defaultlib.Adder_Subtractor
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.RAMblk_mem_gen_prim_wrapper
+Compiling module xil_defaultlib.RAMblk_mem_gen_prim_width
+Compiling module xil_defaultlib.RAMblk_mem_gen_generic_cstr
+Compiling module xil_defaultlib.RAMblk_mem_gen_top
+Compiling module xil_defaultlib.RAMblk_mem_gen_v8_3_5_synth
+Compiling module xil_defaultlib.RAMblk_mem_gen_v8_3_5
+Compiling module xil_defaultlib.RAM
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.sffsrce_fdre
+Compiling module unisims_ver.FDRE
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Microprocessor
+Compiling module xil_defaultlib.Microprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Microprocessor_tb_func_synth

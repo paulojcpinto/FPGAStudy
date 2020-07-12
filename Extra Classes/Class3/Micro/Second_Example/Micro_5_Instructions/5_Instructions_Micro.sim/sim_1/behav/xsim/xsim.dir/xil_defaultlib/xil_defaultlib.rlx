@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.sim/sim_1/behav/xsim/glbl.v,1507084672,verilog,,,,glbl,,,,,,,,
+D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.srcs/sim_1/new/Microprocessor_tb.v,1488322619,verilog,,,,Microprocessor_tb,,,,,,,,
+D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.srcs/sources_1/ip/Adder_Subtractor/sim/Adder_Subtractor.vhd,1519643108,vhdl,,,,adder_subtractor,,,,,,,,
+D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.srcs/sources_1/ip/RAM/sim/RAM.v,1519643111,verilog,,D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.srcs/sources_1/new/Microprocessor.v,,RAM,,,,,,,,
+D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.srcs/sources_1/new/Microprocessor.v,1488366827,verilog,,D:/Ivo/Desktop/Micro_5_Instructions/5_Instructions_Micro.srcs/sim_1/new/Microprocessor_tb.v,,Control_Unit;Datapath;Microprocessor,,,,,,,,

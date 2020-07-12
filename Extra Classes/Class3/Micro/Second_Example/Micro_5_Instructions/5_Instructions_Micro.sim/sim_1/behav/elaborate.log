@@ -1,0 +1,43 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 17e73b78c50148458fc634587228f97f --debug typical --relax --mt 2 -L xbip_utils_v3_0_7 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L xil_defaultlib -L blk_mem_gen_v8_3_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Microprocessor_tb_behav xil_defaultlib.Microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_viv_comp
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv_comp
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
+Compiling package c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv_comp
+Compiling package unisim.vcomponents
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="zyn...
+Compiling module xil_defaultlib.RAM
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture adder_subtractor_arch of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Microprocessor
+Compiling module xil_defaultlib.Microprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Microprocessor_tb_behav

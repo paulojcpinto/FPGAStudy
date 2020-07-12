@@ -1,0 +1,1 @@
+ -p virtex5 -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X C:/Users/jorgepereira/Desktop/Cache_projects/Instruction_Cache/ll/

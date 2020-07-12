@@ -1,0 +1,26 @@
+# Output products list for <Dmem>
+Dmem.asy
+Dmem.gise
+Dmem.mif
+Dmem.ngc
+Dmem.sym
+Dmem.v
+Dmem.veo
+Dmem.xco
+Dmem.xise
+Dmem_flist.txt
+Dmem_ste\example_design\Dmem_top.ucf
+Dmem_ste\example_design\Dmem_top.vhd
+Dmem_ste\example_design\Dmem_top.xdc
+Dmem_ste\example_design\bmg_wrapper.vhd
+Dmem_ste\implement\implement.sh
+Dmem_ste\implement\planAhead_rdn.bat
+Dmem_ste\implement\planAhead_rdn.sh
+Dmem_ste\implement\planAhead_rdn.tcl
+Dmem_ste\implement\xst.prj
+Dmem_ste\implement\xst.scr
+Dmem_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log

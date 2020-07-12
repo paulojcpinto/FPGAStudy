@@ -1,0 +1,67 @@
+=====================
+Opened log file
+=====================
+Created pcores directory
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Copied C:/Xilinx/14.7/ISE_DS/EDK/data/xflow/bitgen_virtex5.ut to etc directory
+Copied file C:/Xilinx/14.7/ISE_DS/EDK/data/xflow/fast_runtime_virtex5.opt to etc
+directory
+
+Overriding IP level properties ...
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Checking platform address map ...
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ERROR:EDK:4024 - Could not copy C:\Xilinx\14.7\ISE_DS\EDK\data\xpsgui\xsl\edw2xtl_sav_globals.xsl
+ERROR:EDK:4029 - Could not find main Project XML To SAV View xsl file C:\Users\jorgepereira\Desktop\Cache_projects\Instruction_Cache\ll\__xps\edw2xtl_sav_view.xsl
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\jorgepereira\Desktop\Cache_projects\Instruction_Cache\ll\etc\ll.filters
+Done writing Tab View settings to:
+	C:\Users\jorgepereira\Desktop\Cache_projects\Instruction_Cache\ll\etc\ll.gui
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Checking platform address map ...
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Microprocessor_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Microprocessor_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="40500001fs"></ZoomEndTime>
+      <Cursor1Time time="83100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="84"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject type="logic" fp_name="/Microprocessor_tb/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/Second_Cycle">
+      <obj_property name="ElementShortName">Second_Cycle</obj_property>
+      <obj_property name="ObjectShortName">Second_Cycle</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Microprocessor_tb/uut/dp/CU/Opcode">
+      <obj_property name="ElementShortName">Opcode[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Microprocessor_tb/uut/dp/PC">
+      <obj_property name="ElementShortName">PC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/ALU/ADD">
+      <obj_property name="ElementShortName">ADD</obj_property>
+      <obj_property name="ObjectShortName">ADD</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Microprocessor_tb/uut/dp/ALU/A">
+      <obj_property name="ElementShortName">A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Microprocessor_tb/uut/dp/ALU/B">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Microprocessor_tb/uut/dp/ALU_Out">
+      <obj_property name="ElementShortName">ALU_Out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_Out[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Microprocessor_tb/uut/dp/Register_File">
+      <obj_property name="ElementShortName">Register_File[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_File[7:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Data_Alu">
+      <obj_property name="ElementShortName">Data_Alu</obj_property>
+      <obj_property name="ObjectShortName">Data_Alu</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Data_Reg">
+      <obj_property name="ElementShortName">Data_Reg</obj_property>
+      <obj_property name="ObjectShortName">Data_Reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Data_Mem">
+      <obj_property name="ElementShortName">Data_Mem</obj_property>
+      <obj_property name="ObjectShortName">Data_Mem</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Data_Imm">
+      <obj_property name="ElementShortName">Data_Imm</obj_property>
+      <obj_property name="ObjectShortName">Data_Imm</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Write_Mem">
+      <obj_property name="ElementShortName">Write_Mem</obj_property>
+      <obj_property name="ObjectShortName">Write_Mem</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Write_Reg">
+      <obj_property name="ElementShortName">Write_Reg</obj_property>
+      <obj_property name="ObjectShortName">Write_Reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Microprocessor_tb/uut/dp/CU/Add_Sub">
+      <obj_property name="ElementShortName">Add_Sub</obj_property>
+      <obj_property name="ObjectShortName">Add_Sub</obj_property>
+   </wvobject>
+</wave_config>

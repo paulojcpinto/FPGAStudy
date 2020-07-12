@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/jorgepereira/Desktop/Cache_projects/Instruction_Cache/cache_test_isim_beh.exe" -prj "C:/Users/jorgepereira/Desktop/Cache_projects/Instruction_Cache/cache_test_beh.prj" "cache_test" "work.glbl" 

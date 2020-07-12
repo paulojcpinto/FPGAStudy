@@ -1,0 +1,29 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Mon Feb 12 16:39:39 UTC 2018.
+#
+# This is license NODELOCKED to HOSTID=ANY;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Mon Feb 12 16:39:39 UTC 2018
+INCREMENT SDK xilinxd 2019.02 permanent uncounted 2568AD42B606 \
+VENDOR_STRING=_reis220,SDK,software,permanent,_211483609_0_0_026 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=12-Feb-2018 TS_OK
+#
+# This is a permanent license generated on Mon Feb 12 16:39:39 UTC 2018
+INCREMENT Analyzer xilinxd 2019.02 permanent uncounted 3219B509C9E1 \
+VENDOR_STRING=_reis220,Analyzer,software,permanent,_211483609_0_0_845 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=12-Feb-2018 TS_OK
+#
+# This is a permanent license generated on Mon Feb 12 16:39:39 UTC 2018
+INCREMENT HLS xilinxd 2019.02 permanent uncounted 864DCAA8A6CF \
+VENDOR_STRING=_reis220,HLS,software,permanent,_211483609_0_0_127 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=12-Feb-2018 TS_OK
+#
+# This is a permanent license generated on Mon Feb 12 16:39:39 UTC 2018
+INCREMENT V_WebPACK xilinxd 2019.02 permanent uncounted FDA872ED4A3B \
+VENDOR_STRING=_reis220,V_WebPACK,software,permanent,_211483609_0_0_148 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=12-Feb-2018 TS_OK
+#
+# ----- REMOVE LINES BELOW HERE --------------------------

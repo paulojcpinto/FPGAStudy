@@ -1,0 +1,2 @@
+verilog work "rom.v"
+verilog work "offchip_memory.v"

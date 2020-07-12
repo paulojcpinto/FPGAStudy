@@ -1,0 +1,533 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: memory_hierarchy.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "memory_hierarchy.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "memory_hierarchy"
+Output Format                      : NGC
+Target Device                      : xc5vlx20t-2-ff323
+
+---- Source Options
+Top Module Name                    : memory_hierarchy
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rom.v" in library work
+Compiling verilog file "offchip_memory.v" in library work
+Module <rom> compiled
+Compiling verilog file "Cache_2way_Associative.v" in library work
+Module <offchip_memory> compiled
+Compiling verilog file "memory_hierarchy.v" in library work
+Module <Cache_2way_Associative> compiled
+Module <memory_hierarchy> compiled
+No errors in compilation
+Analysis of file <"memory_hierarchy.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <memory_hierarchy> in library <work>.
+
+Analyzing hierarchy for module <Cache_2way_Associative> in library <work>.
+
+Analyzing hierarchy for module <offchip_memory> in library <work>.
+
+Analyzing hierarchy for module <rom> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <memory_hierarchy>.
+Module <memory_hierarchy> is correct for synthesis.
+ 
+Analyzing module <Cache_2way_Associative> in library <work>.
+Module <Cache_2way_Associative> is correct for synthesis.
+ 
+Analyzing module <offchip_memory> in library <work>.
+Module <offchip_memory> is correct for synthesis.
+ 
+Analyzing module <rom> in library <work>.
+WARNING:Xst:2319 - "rom.v" line 35: Signal memory in initial block is partially initialized. The initialization will be ignored.
+Module <rom> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <Cache_2way_Associative> has a constant value of 1000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Cache_2way_Associative>.
+    Related source file is "Cache_2way_Associative.v".
+    Found 8x64-bit single-port RAM <Mram_cache_set1> for signal <cache_set1>.
+    Found 8x64-bit single-port RAM <Mram_cache_set2> for signal <cache_set2>.
+    Found 16-bit register for signal <instruction>.
+    Found 4-bit comparator equal for signal <cache_hit1$cmp_eq0000> created at line 95.
+    Found 4-bit 8-to-1 multiplexer for signal <cache_hit1$varindex0000> created at line 95.
+    Found 4-bit comparator equal for signal <cache_hit2$cmp_eq0000> created at line 97.
+    Found 4-bit 8-to-1 multiplexer for signal <cache_hit2$varindex0000> created at line 97.
+    Found 32-bit register for signal <cache_tag1>.
+    Found 32-bit register for signal <cache_tag2>.
+    Found 8-bit register for signal <pseudo_lru>.
+    Found 1-bit register for signal <status>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  89 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <Cache_2way_Associative> synthesized.
+
+
+Synthesizing Unit <rom>.
+    Related source file is "rom.v".
+WARNING:Xst:647 - Input <address<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <memory> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
+    Found 64-bit register for signal <data>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <rom> synthesized.
+
+
+Synthesizing Unit <offchip_memory>.
+    Related source file is "offchip_memory.v".
+    Found 1-bit register for signal <en_temp>.
+    Found 4-bit register for signal <lat_count>.
+    Found 4-bit adder for signal <new_lat_count$addsub0000> created at line 60.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <offchip_memory> synthesized.
+
+
+Synthesizing Unit <memory_hierarchy>.
+    Related source file is "memory_hierarchy.v".
+Unit <memory_hierarchy> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x64-bit single-port RAM                              : 2
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 29
+ 1-bit register                                        : 10
+ 16-bit register                                       : 1
+ 4-bit register                                        : 17
+ 64-bit register                                       : 1
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 2
+# Multiplexers                                         : 3
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 8-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <data_0> in Unit <instruction_memory> is equivalent to the following 63 FFs/Latches, which will be removed : <data_1> <data_2> <data_3> <data_4> <data_5> <data_6> <data_7> <data_8> <data_9> <data_10> <data_11> <data_12> <data_13> <data_14> <data_15> <data_16> <data_17> <data_18> <data_19> <data_20> <data_21> <data_22> <data_23> <data_24> <data_25> <data_26> <data_27> <data_28> <data_29> <data_30> <data_31> <data_32> <data_33> <data_34> <data_35> <data_36> <data_37> <data_38> <data_39> <data_40> <data_41> <data_42> <data_43> <data_44> <data_45> <data_46> <data_47> <data_48> <data_49> <data_50> <data_51> <data_52> <data_53> <data_54> <data_55> <data_56> <data_57> <data_58> <data_59> <data_60> <data_61> <data_62> <data_63> 
+WARNING:Xst:1710 - FF/Latch <data_0> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <en_temp> is unconnected in block <MEMORY>.
+WARNING:Xst:1290 - Hierarchical block <instruction_memory> is unconnected in block <MEMORY>.
+   It will be removed from the design.
+WARNING:Xst:2404 -  FFs/Latches <data<63:0>> (without init value) have a constant value of 0 in block <rom>.
+
+Synthesizing (advanced) Unit <Cache_2way_Associative>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_cache_set1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 64-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <reset>         | low      |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <new_cache_set1> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_cache_set2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 64-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <reset>         | low      |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <new_cache_set2> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Cache_2way_Associative> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x64-bit single-port distributed RAM                  : 2
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 94
+ Flip-Flops                                            : 94
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 2
+# Multiplexers                                         : 3
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 8-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <en_temp> of sequential type is unconnected in block <offchip_memory>.
+
+Optimizing unit <memory_hierarchy> ...
+
+Optimizing unit <Cache_2way_Associative> ...
+
+Optimizing unit <offchip_memory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block memory_hierarchy, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : memory_hierarchy.ngr
+Top Level Output File Name         : memory_hierarchy
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 235
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 9
+#      LUT4                        : 135
+#      LUT5                        : 7
+#      LUT6                        : 55
+#      MUXF7                       : 25
+# FlipFlops/Latches                : 93
+#      FDR                         : 21
+#      FDRE                        : 72
+# RAMS                             : 128
+#      RAM32X1S                    : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 10
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx20tff323-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              93  out of  12480     0%  
+ Number of Slice LUTs:                  337  out of  12480     2%  
+    Number used as Logic:               209  out of  12480     1%  
+    Number used as Memory:              128  out of   3360     3%  
+       Number used as RAM:              128
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    383
+   Number with an unused Flip Flop:     290  out of    383    75%  
+   Number with an unused LUT:            46  out of    383    12%  
+   Number of fully used LUT-FF pairs:    47  out of    383    12%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    172    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 221   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.012ns (Maximum Frequency: 332.000MHz)
+   Minimum input arrival time before clock: 3.676ns
+   Maximum output required time after clock: 5.623ns
+   Maximum combinational path delay: 6.287ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 3.012ns (frequency: 332.000MHz)
+  Total number of paths / destination ports: 4622 / 237
+-------------------------------------------------------------------------
+Delay:               3.012ns (Levels of Logic = 5)
+  Source:            CACHE/cache_tag1_7_0 (FF)
+  Destination:       CACHE/instruction_15 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: CACHE/cache_tag1_7_0 to CACHE/instruction_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.396   0.662  CACHE/cache_tag1_7_0 (CACHE/cache_tag1_7_0)
+     LUT6:I2->O            1   0.086   0.000  CACHE/Mmux_cache_hit1_varindex0000_3 (CACHE/Mmux_cache_hit1_varindex0000_3)
+     MUXF7:I1->O           2   0.214   0.416  CACHE/Mmux_cache_hit1_varindex0000_2_f7 (CACHE/cache_hit1_varindex0000<0>)
+     LUT2:I1->O            1   0.086   0.412  CACHE/cache_hit14_SW0 (N4)
+     LUT6:I5->O           20   0.086   0.374  CACHE/cache_hit14 (CACHE/cache_hit1)
+     MUXF7:S->O            1   0.281   0.000  CACHE/inst_wire<15>761 (CACHE/inst_wire<15>76)
+     FDR:D                    -0.022          CACHE/instruction_15
+    ----------------------------------------
+    Total                      3.012ns (1.149ns logic, 1.863ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 3859 / 895
+-------------------------------------------------------------------------
+Offset:              3.676ns (Levels of Logic = 6)
+  Source:            address<3> (PAD)
+  Destination:       CACHE/instruction_15 (FF)
+  Destination Clock: clock rising
+
+  Data Path: address<3> to CACHE/instruction_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           154   0.694   1.028  address_3_IBUF (address_3_IBUF)
+     LUT6:I0->O            1   0.086   0.000  CACHE/Mmux_cache_hit1_varindex0000_3 (CACHE/Mmux_cache_hit1_varindex0000_3)
+     MUXF7:I1->O           2   0.214   0.416  CACHE/Mmux_cache_hit1_varindex0000_2_f7 (CACHE/cache_hit1_varindex0000<0>)
+     LUT2:I1->O            1   0.086   0.412  CACHE/cache_hit14_SW0 (N4)
+     LUT6:I5->O           20   0.086   0.374  CACHE/cache_hit14 (CACHE/cache_hit1)
+     MUXF7:S->O            1   0.281   0.000  CACHE/inst_wire<15>761 (CACHE/inst_wire<15>76)
+     FDR:D                    -0.022          CACHE/instruction_15
+    ----------------------------------------
+    Total                      3.676ns (1.447ns logic, 2.229ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 85 / 17
+-------------------------------------------------------------------------
+Offset:              5.623ns (Levels of Logic = 6)
+  Source:            CACHE/cache_tag1_7_0 (FF)
+  Destination:       rd_ready (PAD)
+  Source Clock:      clock rising
+
+  Data Path: CACHE/cache_tag1_7_0 to rd_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.396   0.662  CACHE/cache_tag1_7_0 (CACHE/cache_tag1_7_0)
+     LUT6:I2->O            1   0.086   0.000  CACHE/Mmux_cache_hit1_varindex0000_3 (CACHE/Mmux_cache_hit1_varindex0000_3)
+     MUXF7:I1->O           2   0.214   0.416  CACHE/Mmux_cache_hit1_varindex0000_2_f7 (CACHE/cache_hit1_varindex0000<0>)
+     LUT2:I1->O            1   0.086   0.412  CACHE/cache_hit14_SW0 (N4)
+     LUT6:I5->O           20   0.086   0.750  CACHE/cache_hit14 (CACHE/cache_hit1)
+     LUT4:I0->O            1   0.086   0.286  CACHE/read_ready1 (rd_ready_OBUF)
+     OBUF:I->O                 2.144          rd_ready_OBUF (rd_ready)
+    ----------------------------------------
+    Total                      5.623ns (3.098ns logic, 2.525ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 48 / 1
+-------------------------------------------------------------------------
+Delay:               6.287ns (Levels of Logic = 7)
+  Source:            address<3> (PAD)
+  Destination:       rd_ready (PAD)
+
+  Data Path: address<3> to rd_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           154   0.694   1.028  address_3_IBUF (address_3_IBUF)
+     LUT6:I0->O            1   0.086   0.000  CACHE/Mmux_cache_hit1_varindex0000_3 (CACHE/Mmux_cache_hit1_varindex0000_3)
+     MUXF7:I1->O           2   0.214   0.416  CACHE/Mmux_cache_hit1_varindex0000_2_f7 (CACHE/cache_hit1_varindex0000<0>)
+     LUT2:I1->O            1   0.086   0.412  CACHE/cache_hit14_SW0 (N4)
+     LUT6:I5->O           20   0.086   0.750  CACHE/cache_hit14 (CACHE/cache_hit1)
+     LUT4:I0->O            1   0.086   0.286  CACHE/read_ready1 (rd_ready_OBUF)
+     OBUF:I->O                 2.144          rd_ready_OBUF (rd_ready)
+    ----------------------------------------
+    Total                      6.287ns (3.396ns logic, 2.891ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.04 secs
+ 
+--> 
+
+Total memory usage is 265408 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
