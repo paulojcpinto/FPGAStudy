@@ -1,3 +1,45 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1.1 (lin64) Build 2960000 Wed Aug  5 22:57:21 MDT 2020
+| Date         : Sun Sep 20 11:24:42 2020
+| Host         : PaulojcPinto running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RAM'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of RAM (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1.1 (lin64) Build 2960000 Wed Aug  5 22:57:21 MDT 2020
+| Date         : Sun Sep 20 11:24:41 2020
+| Host         : PaulojcPinto running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Adder_Subtractor'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Adder_Subtractor (xilinx.com:ip:c_addsub:12.0) from (Rev. 11) to (Rev. 14)
+
+
+
+
+
+
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
